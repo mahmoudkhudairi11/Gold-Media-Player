@@ -71,7 +71,7 @@ GoldMedia.Player = function (config) {
     PARENT.style.width = "640px";
   }
   if (parseInt(parentStyle.height) == 0) {
-    PARENT.style.width = "360px";
+    PARENT.style.height = "360px";
   }
   let
     GMPlayer       = PARENT.querySelector(`.gmplayer[data-player_id="${PLAYERID}"]`),
