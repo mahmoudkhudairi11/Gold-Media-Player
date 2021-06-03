@@ -16,7 +16,7 @@
 }
 .gmplayer .gmplayer-body, .gmplayer .gmplayer-body * {
   box-sizing: border-box;
-  direction: left;
+  direction: ltr;
   user-select: none;
 }
 .gmplayer .gmplayer-body .gmplayer-p {
