@@ -1,0 +1,292 @@
+.gmplayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  min-width: 306px;
+}
+.gmplayer .gmplayer-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.gmplayer .gmplayer-body.gmplayer-s-s:not(.gmplayer-s-fa) {
+  cursor: none;
+}
+.gmplayer .gmplayer-body, .gmplayer .gmplayer-body * {
+  user-select: none;
+}
+.gmplayer .gmplayer-body .gmplayer-p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.gmplayer .gmplayer-body .gmplayer-p video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+.gmplayer .gmplayer-body .gmplayer-p video.gmplayer-v-s {
+  filter: grayscale(0.5) blur(1px);
+  transform: scale(1.5);
+}
+.gmplayer .gmplayer-body .gmplayer-p video::-webkit-media-controls-panel {
+  display: none;
+}
+.gmplayer .gmplayer-body .gmplayer-ls {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.gmplayer .gmplayer-body .gmplayer-ls.gmplayer-s-h {
+  display: none;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  animation: lds-default 1.2s linear infinite;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(1) {
+  animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(11) {
+  animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+.gmplayer .gmplayer-body .gmplayer-ls .gmplayer-ls-p:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+@keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+.gmplayer .gmplayer-body .gmplayer-m {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to top, #0009, transparent);
+  bottom: 0;
+  transition: .3s;
+}
+.gmplayer .gmplayer-body.gmplayer-s-s:not(.gmplayer-s-fa) .gmplayer-m {
+  bottom: -100px;
+}
+.gmplayer .gmplayer-body .gmplayer-sb {
+  position: absolute;
+  width: 97%;
+  height: 3px;
+  bottom: 40px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+.gmplayer .gmplayer-body.gmplayer-s-s:not(.gmplayer-s-fa) .gmplayer-sb {
+  width: 100%;
+}
+.gmplayer .gmplayer-body.gmplayer-s-s:not(.gmplayer-s-fa) .gmplayer-sb {
+  bottom: 0;
+}
+.gmplayer .gmplayer-body .gmplayer-sb:hover {
+  height: 30px;
+}
+.gmplayer .gmplayer-body .gmplayer-sb .gmplayer-sb-c {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff3;
+  bottom: 0;
+  transition: .3s;
+}
+.gmplayer .gmplayer-body .gmplayer-sb:hover .gmplayer-sb-c {
+  height: 9px;
+}
+.gmplayer .gmplayer-body .gmplayer-sb.gmplayer-s-a {
+  height: 30px;
+}
+.gmplayer .gmplayer-body .gmplayer-sb.gmplayer-s-a .gmplayer-sb-c {
+  height: 9px;
+}
+.gmplayer .gmplayer-sb .gmplayer-bar-b, .gmplayer .gmplayer-sb .gmplayer-bar-t {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+}
+.gmplayer .gmplayer-sb .gmplayer-bar-b {
+  background-color: #fff9;
+}
+.gmplayer .gmplayer-sb .gmplayer-bar-t {
+  background-color: #f00;
+}
+.gmplayer .gmplayer-sb .gmplayer-bar-t.gmplayer-bar-e-sk {
+  background-color: #900;
+}
+.gmplayer .gmplayer-body .gmplayer-cb {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 0px;
+  transition: .3s;
+  padding: 0 10px;
+}
+.gmplayer .gmplayer-body.gmplayer-s-s:not(.gmplayer-s-fa) .gmplayer-cb {
+  bottom: -40px;
+}
+.gmplayer .gmplayer-cb .gmplayer-cb-l, .gmplayer .gmplayer-cb .gmplayer-cb-r {
+  display: flex;
+}
+.gmplayer .gmplayer-cb .gmplayer-cb-l {
+  float: left;
+}
+.gmplayer .gmplayer-cb .gmplayer-cb-r {
+  float: right;
+}
+.gmplayer .gmplayer-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.gmplayer svg {
+  fill: #dadada;
+  transition: .3s;
+}
+.gmplayer svg:hover {
+  fill: #fff;
+}
+.gmplayer .gmplayer-btn.gmplayer-btn-s-d svg {
+  fill: #9a9a9a;
+}
+.gmplayer .gmplayer-btn.gmplayer-btn-s-d:hover svg {
+  fill: #dadada;
+}
+.gmplayer-va {
+  position: relative;
+  display: flex;
+  transition: .3s;
+}
+.gmplayer-va:hover {
+  margin-right: 15px;
+}
+.gmplayer-vba {
+  position: relative;
+  width: 0;
+  height: 100%;
+  cursor: pointer;
+  transition: .3s;
+}
+.gmplayer-va:hover .gmplayer-vba {
+  width: 100px;
+}
+.gmplayer-vb, .gmplayer-vv {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  transition: .3s;
+}
+.gmplayer-vb {
+  background-color: #fff3;
+}
+.gmplayer-vv {
+  background-color: #fff;
+}
+.gmplayer-vba:hover .gmplayer-vb, .gmplayer-vba:hover .gmplayer-vv {
+  height: 9px;
+  border-radius: 4.5px;
+}
+.gmplayer-va.gmplayer-s-a {
+  margin-right: 15px;
+}
+.gmplayer-va.gmplayer-s-a .gmplayer-vba {
+  width: 100px;
+}
+.gmplayer-va.gmplayer-s-a .gmplayer-vb, .gmplayer-va.gmplayer-s-a .gmplayer-vv {
+  height: 9px;
+  border-radius: 4.5px;
+  transition: 0s;
+}
+.gmplayer-ta {
+  color: #fafafa;
+  line-height: 40px;
+  user-select: none;
+  cursor: default;
+}
+.gmplayer-ta .gmplayer-t-h {
+  color: #f00;
+  font-weight: bold;
+}
+.gmplayer-ta:not(.gmplayer-s-h) .gmplayer-t-h {
+  display: none;
+}
+.gmplayer-ta.gmplayer-s-h .gmplayer-t-c {
+  display: none;
+}
